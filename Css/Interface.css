@@ -1,1 +1,825 @@
-rtgrb
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+    --navbar-text-color: #ffffff;
+    /* White for navbar text */
+    --main-hover-color: #0e202e;
+    /* Dark color for hover states */
+    --main-logo-color: #04697d;
+    /* Logo color */
+
+    --main-color: #2196f3;
+    /* Primary blue color */
+    --main-color-alt: rgb(9, 99, 61);
+    /* Slightly darker blue for hover effects */
+    --main-transition: 0.3s;
+    /* Transition speed for effects */
+    --main-padding-top: 100px;
+    /* Padding at the top of main sections */
+    --main-padding-bottom: 100px;
+    /* Padding at the bottom of main sections */
+    --section-background: #ececec;
+    /* Light grey background for sections */
+  }
+
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  height: 400vh;
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================== Start Navbar ============================ */
+
+
+.navbar {
+    padding: 0px;
+    position: fixed;
+  }
+  
+  .container-fluid {
+    height: 7vh;
+  }
+  
+  .navbar-brand img {
+    height: 120px;
+  }
+  
+  .navbar-brand:hover {
+    color: var(--main-logo-color);
+  }
+  
+  .navbar-nav {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: white;
+  }
+  
+  .container-fluid {
+    padding: 20px 55px;
+  }
+  
+  .post-job:hover {
+    background-color: rgba(0, 0, 0, 0.119);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .dropdown-menu {
+    width: 400px;
+    height: fit-content;
+    background-color: #6a6c6ca3;
+  }
+  
+  .dropdown-menu li {
+    padding: 20px 20px 20px 40px;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .dropdown p {
+    color: white;
+  }
+  .login {
+    border: 2px solid rgb(9, 99, 61);
+    font-size: 18px;
+  }
+  
+  .login:hover {
+    background-color: rgb(7, 58, 37);
+    border-color: rgb(7, 58, 37);
+  }
+  
+  .sign-up {
+    background-color: rgb(9, 99, 61);
+    font-size: 18px;
+  }
+  
+  .nav-link {
+    color: var(--navbar-text-color);
+  }
+  
+  .sign-up:hover {
+    background-color: rgb(7, 58, 37);
+  }
+  
+  .border-style {
+    border: 2px solid white;
+    margin-right: 20px;
+    height: 40px;
+    top: 10px;
+    position: relative;
+  }
+  
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .nav-item p {
+    position: relative;
+    top: 10px;
+  }
+  
+ .offcanvas-body  {
+
+  }
+
+ 
+  /* =========================== End Navbar ============================ */
+  
+   
+#parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background:
+    url(/imgs/Dan-Wiersma-Solar-System-Jupiter.512.png) no-repeat 10% 80%,
+    url(/imgs/Jupiter-icon.png) no-repeat 80% 10%,
+    url(/imgs/Jupiter-icon\ \(1\).png) no-repeat 80% 10%,
+    url(/imgs/Jupiter-icon\ \(1\).png) no-repeat 80% 10%;
+
+
+
+}
+
+
+@media screen and (max-width: 1600px) {
+
+  #parallax {
+    background-size: 350px 350px,
+      auto,
+      auto,
+      auto;
+  }
+}
+
+
+
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+/* =========================== Start Landing ============================ */
+
+.landing {
+  position: relative;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #135346, #131313);
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.landing .container {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.landing .text {
+  flex: 1;
+}
+
+
+@media (max-width: 991px) {
+  .landing .text {
+    text-align: center;
+  }
+}
+
+.landing .text h1 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -2px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .landing .text h1 {
+    font-size: 28px;
+  }
+}
+
+.landing .text p {
+  font-size: 23px;
+  line-height: 1.7;
+  margin: 5px 0 0;
+  color: #b1b0b0;
+  max-width: 500px;
+}
+
+@media (max-width: 991px) {
+  .landing .text p {
+    margin: 10px auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .landing .text p {
+    font-size: 18px;
+  }
+}
+
+.landing .image img {
+  position: relative;
+  width: 600px;
+  animation: up-and-down 5s linear infinite;
+}
+
+@media (max-width: 991px) {
+  .landing .image {
+    display: none;
+  }
+}
+
+.landing .go-down {
+  color: var(--main-logo-color);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  animation: jump 1.3s ease-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-40%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.landing .go-down i {
+  animation: bouncing 1.5s infinite;
+}
+
+.serch-bar {
+  margin-top: 20px;
+}
+
+.serch-bar input {
+  max-width: 200vh;
+  height: 5vh;
+}
+
+.search-section {
+  width: 200vh;
+}
+
+/* =========================== End Landing ============================ */
+
+
+
+
+
+
+
+/* =========================== Start slider companies ============================ */
+
+.company-slider {
+  padding: 200px 0;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider .item img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.slider input {
+  display: none;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 280px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.testimonials .item {
+  width: 300px;
+  height: 90%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  border: 3px solid #135346;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+
+.testimonials .item h1 {
+  font-size: 114px;
+  color: white;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413b52;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+
+#t-1:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-4"],
+#t-5:checked~.dots label[for="t-5"] {
+  transform: scale(2);
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked~.dots label[for="t-2"],
+#t-2:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-3"],
+#t-3:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-4"],
+#t-4:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-5"],
+#t-5:checked~.dots label[for="t-4"] {
+  transform: scale(1.5);
+}
+
+#t-1:checked~.testimonials label[for="t-3"],
+#t-2:checked~.testimonials label[for="t-4"],
+#t-3:checked~.testimonials label[for="t-5"],
+#t-4:checked~.testimonials label[for="t-1"],
+#t-5:checked~.testimonials label[for="t-2"] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+
+#t-1:checked~.testimonials label[for="t-2"],
+#t-2:checked~.testimonials label[for="t-3"],
+#t-3:checked~.testimonials label[for="t-4"],
+#t-4:checked~.testimonials label[for="t-5"],
+#t-5:checked~.testimonials label[for="t-1"] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+
+#t-2:checked~.testimonials label[for="t-1"],
+#t-3:checked~.testimonials label[for="t-2"],
+#t-4:checked~.testimonials label[for="t-3"],
+#t-5:checked~.testimonials label[for="t-4"],
+#t-1:checked~.testimonials label[for="t-5"] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+
+#t-3:checked~.testimonials label[for="t-1"],
+#t-4:checked~.testimonials label[for="t-2"],
+#t-5:checked~.testimonials label[for="t-3"],
+#t-2:checked~.testimonials label[for="t-5"],
+#t-1:checked~.testimonials label[for="t-4"] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+
+#t-1:checked~.testimonials label[for="t-1"],
+#t-2:checked~.testimonials label[for="t-2"],
+#t-3:checked~.testimonials label[for="t-3"],
+#t-4:checked~.testimonials label[for="t-4"],
+#t-5:checked~.testimonials label[for="t-4"],
+#t-5:checked~.testimonials label[for="t-5"] {
+  z-index: 4;
+}
+
+
+
+/*===============================================End Slider companies ================================*/
+
+
+/*===============================================Start services section ================================*/
+.services-section {
+  background: #efefef52;
+  margin: 0 auto;
+  width: 100%;
+  height: 66vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  text-align: center;
+  color: var(--main-hover-color);
+  position: relative;
+}
+
+.services h2::after {
+  content: " ";
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fdc938;
+}
+
+.services h2::before {
+  content: " ";
+  position: absolute;
+  top: 25px;
+  right: -30px;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #fdc938;
+}
+
+.cards-services {
+  display: grid;
+  gap: 25px;
+  z-index: 9;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.cards-services .card-services {
+  width: 360px;
+  height: 155px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.card-services #services-rocket {
+  font-size: 2.5rem;
+
+  color: #fdc938;
+}
+
+.card-services h3 {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: rgb(0 0 0);
+}
+
+.card-services h5 {
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.card-services .location {
+  position: absolute;
+  top: 65px;
+  left: 30px;
+}
+
+.card-services .time {
+  font-size: 15px;
+  position: absolute;
+  bottom: 3px;
+  left: 29px;
+}
+
+.card-services #arrow-link {
+  font-size: 1.2rem;
+  color: #000000;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-services a {
+  color: #0c0093d6;
+  font-size: 17px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  position: absolute;
+  bottom: 9px;
+  right: 30px;
+}
+
+.card-services a:hover {
+  color: #002884;
+}
+
+
+.discover-Jobs{
+  position: relative;
+}
+
+.discover-Jobs a{
+  color: #0c0093d6;
+  position: absolute;
+  top: 50px;
+  right: -80px;
+}
+
+.discover-Jobs a:hover{
+  color: #002884;
+}
+
+
+.hover-box {
+  position: absolute;
+  width: 400px;
+  height: 210px;
+  background-color: #31313230;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  z-index: -3;
+  opacity: 0;
+  border-radius: 20px;
+}
+
+.card-services:hover {
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1800px) {
+  .services-section {
+    padding: 20px;
+  }
+
+  .services h2 {
+    font-size: 2.5rem;
+  }
+
+  #services-paragraph {
+    font-size: 1.25rem;
+    line-height: 3rem;
+  }
+
+  .cards-services {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card-services {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-services h3 {
+    font-size: 22px;
+  }
+
+  .card-services p {
+    font-size: 1rem;
+  }
+
+  .descover-jobs {
+    margin-left: 0;
+  }
+
+  .Available {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    font-size: 15px;
+    width: 125px;
+  }
+}
+
+@media (max-width: 1800px) and (min-width:1024px) {
+  .cards-services {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  .descover-jobs {
+    right: 42px;
+    bottom: -158%;
+    ;
+  }
+
+  .card-services h3 {
+    font-size: 15px;
+  }
+
+  .card-services p {
+    font-size: 0.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .cards-services .card-services {
+    width: 312px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .services-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  #services-paragraph {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  .cards-services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card-services {
+    width: calc(50% - 15px);
+
+    margin: 0 auto;
+  }
+
+  .card-services h3 {
+    font-size: 20px;
+  }
+
+  .card-services p {
+    font-size: 1rem;
+  }
+
+  .search-area {
+    width: 60vh;
+    margin-left: 45px;
+  }
+
+  .Available {
+    left: 78%;
+  }
+
+  .content h1,
+  .content h3 {
+    width: fit-content;
+    font-size: 32px;
+    margin-left: 135px;
+  }
+
+  .content h1 {
+    margin-left: 210px;
+  }
+}
+
+/* For screens with a max width of 775px to 360px */
+@media screen and (max-width: 775px) and (min-width: 360px) {
+  .cards-services {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .card-services {
+    width: calc(50% - 10px);
+
+    margin: 0 auto;
+  }
+}
+
+/* For screens with a max width of 360px */
+@media screen and (max-width: 360px) {
+  body {
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+  }
+
+  .services-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .services h2 {
+    font-size: 1.5rem;
+  }
+
+  #services-paragraph {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .cards-services {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card-services {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-services h3 {
+    font-size: 18px;
+  }
+
+  .card-services p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*===============================================End services section ================================*/
+
