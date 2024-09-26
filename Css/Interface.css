@@ -53,6 +53,7 @@ ul {
 
 
 .navbar {
+<<<<<<< HEAD
   padding: 0px;
   position: fixed;
 }
@@ -149,6 +150,120 @@ ul {
 
 /* =========================== End Navbar ============================ */
 
+=======
+    padding: 0px;
+    position: fixed;
+  }
+  
+  .container-fluid {
+    height: 7vh;
+  }
+  
+  .navbar-brand img {
+    height: 120px;
+  }
+  
+  .navbar-brand:hover {
+    color: var(--main-logo-color);
+  }
+  
+  .navbar-nav {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: white;
+  }
+  
+  .container-fluid {
+    padding: 20px 55px;
+  }
+  
+  .post-job:hover {
+    background-color: rgba(0, 0, 0, 0.119);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .dropdown-menu {
+    width: 400px;
+    height: fit-content;
+    background-color: #6a6c6ca3;
+  }
+  
+  .dropdown-menu li {
+    padding: 20px 20px 20px 40px;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .dropdown p {
+    color: white;
+  }
+  .login {
+    border: 2px solid rgb(9, 99, 61);
+    font-size: 18px;
+  }
+  
+  .login:hover {
+    background-color: rgb(7, 58, 37);
+    border-color: rgb(7, 58, 37);
+  }
+  
+  .sign-up {
+    background-color: rgb(9, 99, 61);
+    font-size: 18px;
+  }
+  
+  .nav-link {
+    color: var(--navbar-text-color);
+  }
+  
+  .sign-up:hover {
+    background-color: rgb(7, 58, 37);
+  }
+
+  
+  .nav-item p {
+    position: relative;
+    top: 10px;
+  }
+
+.offcanvas{
+  background-color: #7f7b7b5b !important;
+}
+
+.post-job {
+  margin-bottom: 20px; 
+}
+
+.login, .sign-up {
+  margin-bottom: 10px; 
+  width: 100%; 
+  text-align: center; 
+}
+
+.nav-item .dropdown-menu { 
+  position: absolute !important; 
+  left: 70px !important;
+  transform: translateX(-50%);
+  width: 300px;             
+  top: 100%;     
+  background-color: rgba(10, 10, 10, 0.747);           
+}
+
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.nav-item .nav-link:active,
+.nav-item .nav-link:hover {
+  color: white !important;
+}
+
+
+>>>>>>> d8bc20d43df7e17a48dad11e72330765cb38a754
 
 #parallax {
   position: relative;
@@ -734,10 +849,10 @@ ul {
 
   }
 
-  .descover-jobs {
+  .discover-Jobs {
     right: 42px;
     bottom: -158%;
-    ;
+    
   }
 
   .card-services h3 {
@@ -813,6 +928,10 @@ ul {
   .content h1 {
     margin-left: 210px;
   }
+  .discover-Jobs {
+    right: 100px;
+    bottom: -158%;
+  }
 }
 
 /* For screens with a max width of 775px to 360px */
@@ -826,6 +945,11 @@ ul {
     width: calc(50% - 10px);
 
     margin: 0 auto;
+  }
+  .discover-Jobs {
+    right: 80px;
+    bottom: -158%;
+    
   }
 }
 
