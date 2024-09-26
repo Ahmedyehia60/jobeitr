@@ -124,27 +124,47 @@ ul {
   .sign-up:hover {
     background-color: rgb(7, 58, 37);
   }
-  
-  .border-style {
-    border: 2px solid white;
-    margin-right: 20px;
-    height: 40px;
-    top: 10px;
-    position: relative;
-  }
-  
-  .sidebar {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
+
   
   .nav-item p {
     position: relative;
     top: 10px;
   }
-  
- .offcanvas-body  {
 
-  }
+.offcanvas{
+  background-color: #7f7b7b5b !important;
+}
+
+.post-job {
+  margin-bottom: 20px; 
+}
+
+.login, .sign-up {
+  margin-bottom: 10px; 
+  width: 100%; 
+  text-align: center; 
+}
+
+.nav-item .dropdown-menu { 
+  position: absolute !important; 
+  left: 70px !important;
+  transform: translateX(-50%);
+  width: 300px;             
+  top: 100%;     
+  background-color: rgba(10, 10, 10, 0.747);           
+}
+
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.nav-item .nav-link:active,
+.nav-item .nav-link:hover {
+  color: white !important;
+}
+
+
 
  
   /* =========================== End Navbar ============================ */
@@ -684,10 +704,10 @@ ul {
 
   }
 
-  .descover-jobs {
+  .discover-Jobs {
     right: 42px;
     bottom: -158%;
-    ;
+    
   }
 
   .card-services h3 {
@@ -763,6 +783,10 @@ ul {
   .content h1 {
     margin-left: 210px;
   }
+  .discover-Jobs {
+    right: 100px;
+    bottom: -158%;
+  }
 }
 
 /* For screens with a max width of 775px to 360px */
@@ -776,6 +800,11 @@ ul {
     width: calc(50% - 10px);
 
     margin: 0 auto;
+  }
+  .discover-Jobs {
+    right: 80px;
+    bottom: -158%;
+    
   }
 }
 
