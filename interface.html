@@ -84,29 +84,30 @@
 
     <!-----------------------------start landing------------------------------------->
 
-
-    <div class="landing" id="parallax" class="parallax" class="parallax">
+    <div class="landing" id="parallax" class="parallax">
         <div class="container">
             <div class="search-section">
                 <div class="text">
                     <h1>Discover Your Perfect Career Match</h1>
-                    <p>
-                        Browse through thousands of job opportunities from around the
-                        globe
-                    </p>
+                    <p>Browse through thousands of job opportunities from around the globe</p>
                 </div>
-                <div class="row col-md-12 serch-bar">
-                    <div class="col-md-12">
-                        <input type="search" id="address" class="form-control" placeholder="Where are we going?" />
-                    </div>
+                <!-- Flex container for the search bar -->
+                <div class="search-bar d-flex align-items-center justify-content-between">
+                    <!-- Search input -->
+                    <input type="search" id="address" class="form-control flex-grow-1" placeholder="Search for your dream job or company...">
+                    <!-- Job count -->
+                    <span class="open-jobs mx-3 text-end">10,355 Open Jobs</span>
+                    <!-- Search button -->
+                    <button class="btn btn-primary ">Search Jobs</button>
                 </div>
             </div>
         </div>
         <a href="#companies" class="go-down">
             <i class="fas fa-angle-double-down fa-2x"></i>
         </a>
-
     </div>
+    
+    
     <!------------------------------------------- End Landing ------------------------------>
 
 
@@ -215,14 +216,12 @@
                                     class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
-
                     <div class="hover-box"></div>
                 </div>
             </div>
             <div class="discover-Jobs"><a href="jobs.html" class="text-decoration-none"> Discover More Jobs<i
                         class="fa-solid fa-arrow-right-long"></i></a></div>
         </div>
-
     </section>
 
 

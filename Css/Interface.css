@@ -5,28 +5,28 @@
 }
 
 :root {
-    --navbar-text-color: #ffffff;
-    /* White for navbar text */
-    --main-hover-color: #0e202e;
-    /* Dark color for hover states */
-    --main-logo-color: #04697d;
-    /* Logo color */
+  --navbar-text-color: #ffffff;
+  /* White for navbar text */
+  --main-hover-color: #0e202e;
+  /* Dark color for hover states */
+  --main-logo-color: #04697d;
+  /* Logo color */
 
-    --main-color: #2196f3;
-    /* Primary blue color */
-    --main-color-alt: rgb(9, 99, 61);
-    /* Slightly darker blue for hover effects */
-    --main-transition: 0.3s;
-    /* Transition speed for effects */
-    --main-padding-top: 100px;
-    /* Padding at the top of main sections */
-    --main-padding-bottom: 100px;
-    /* Padding at the bottom of main sections */
-    --section-background: #ececec;
-    /* Light grey background for sections */
-  }
+  --main-color: #2196f3;
+  /* Primary blue color */
+  --main-color-alt: rgb(9, 99, 61);
+  /* Slightly darker blue for hover effects */
+  --main-transition: 0.3s;
+  /* Transition speed for effects */
+  --main-padding-top: 100px;
+  /* Padding at the top of main sections */
+  --main-padding-bottom: 100px;
+  /* Padding at the bottom of main sections */
+  --section-background: #ececec;
+  /* Light grey background for sections */
+}
 
-  
+
 html {
   scroll-behavior: smooth;
 }
@@ -53,103 +53,103 @@ ul {
 
 
 .navbar {
-    padding: 0px;
-    position: fixed;
-  }
-  
-  .container-fluid {
-    height: 7vh;
-  }
-  
-  .navbar-brand img {
-    height: 120px;
-  }
-  
-  .navbar-brand:hover {
-    color: var(--main-logo-color);
-  }
-  
-  .navbar-nav {
-    margin-left: 20px;
-    font-size: 18px;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: white;
-  }
-  
-  .container-fluid {
-    padding: 20px 55px;
-  }
-  
-  .post-job:hover {
-    background-color: rgba(0, 0, 0, 0.119);
-    border-radius: 10px;
-    padding: 5px;
-  }
-  
-  .dropdown-menu {
-    width: 400px;
-    height: fit-content;
-    background-color: #6a6c6ca3;
-  }
-  
-  .dropdown-menu li {
-    padding: 20px 20px 20px 40px;
-    font-size: 1.2rem;
-    color: white;
-  }
-  .dropdown p {
-    color: white;
-  }
-  .login {
-    border: 2px solid rgb(9, 99, 61);
-    font-size: 18px;
-  }
-  
-  .login:hover {
-    background-color: rgb(7, 58, 37);
-    border-color: rgb(7, 58, 37);
-  }
-  
-  .sign-up {
-    background-color: rgb(9, 99, 61);
-    font-size: 18px;
-  }
-  
-  .nav-link {
-    color: var(--navbar-text-color);
-  }
-  
-  .sign-up:hover {
-    background-color: rgb(7, 58, 37);
-  }
-  
-  .border-style {
-    border: 2px solid white;
-    margin-right: 20px;
-    height: 40px;
-    top: 10px;
-    position: relative;
-  }
-  
-  .sidebar {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  
-  .nav-item p {
-    position: relative;
-    top: 10px;
-  }
-  
- .offcanvas-body  {
+  padding: 0px;
+  position: fixed;
+}
 
-  }
+.container-fluid {
+  height: 7vh;
+}
 
- 
-  /* =========================== End Navbar ============================ */
-  
-   
+.navbar-brand img {
+  height: 120px;
+}
+
+.navbar-brand:hover {
+  color: var(--main-logo-color);
+}
+
+.navbar-nav {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.container-fluid {
+  padding: 20px 55px;
+}
+
+.post-job:hover {
+  background-color: rgba(0, 0, 0, 0.119);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.dropdown-menu {
+  width: 400px;
+  height: fit-content;
+  background-color: #6a6c6ca3;
+}
+
+.dropdown-menu li {
+  padding: 20px 20px 20px 40px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.dropdown p {
+  color: white;
+}
+
+.login {
+  border: 2px solid rgb(9, 99, 61);
+  font-size: 18px;
+}
+
+.login:hover {
+  background-color: rgb(7, 58, 37);
+  border-color: rgb(7, 58, 37);
+}
+
+.sign-up {
+  background-color: rgb(9, 99, 61);
+  font-size: 18px;
+}
+
+.nav-link {
+  color: var(--navbar-text-color);
+}
+
+.sign-up:hover {
+  background-color: rgb(7, 58, 37);
+}
+
+.border-style {
+  border: 2px solid white;
+  margin-right: 20px;
+  height: 40px;
+  top: 10px;
+  position: relative;
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-item p {
+  position: relative;
+  top: 10px;
+}
+
+
+
+
+/* =========================== End Navbar ============================ */
+
+
 #parallax {
   position: relative;
   width: 100%;
@@ -323,16 +323,66 @@ ul {
 
 .serch-bar {
   margin-top: 20px;
+  position: relative;
 }
 
 .serch-bar input {
   max-width: 200vh;
   height: 5vh;
+  margin-top: 20px;
 }
 
 .search-section {
   width: 200vh;
 }
+
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between items as needed */
+  margin-top: 20px; /* Adjust as needed */
+ border-color: #135346;
+  position: relative;
+}
+
+.search-bar .form-control {
+ /* flex: 2; /* Adjusts the width of the search input */
+ height: 50px;
+ 
+}
+.search-bar .form-control:focus {
+  border-color: #135346;
+  box-shadow: 0 0 0 0.1a5rem rgba(0, 54, 28, 0.815);
+ 
+}
+
+.open-jobs {
+  flex: 1; /* Adjusts the width of the job count text */
+  font-size: 16px;
+  color: #0000009c;
+  text-align: center; /* Centers the text inside its flex area */
+  position: absolute;
+  right: 300px;
+}
+
+.search-bar button {
+  flex: 1; /* Adjusts the width of the button */
+  background-color: rgb(0, 55, 28);
+  color: #fff; /* Optional: Adjust text color for better contrast */
+  position : absolute;
+  right: 10px;
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+
+.search-bar button:hover {
+  background-color: rgb(1, 39, 20);
+}
+
 
 /* =========================== End Landing ============================ */
 
@@ -599,18 +649,18 @@ ul {
 }
 
 
-.discover-Jobs{
+.discover-Jobs {
   position: relative;
 }
 
-.discover-Jobs a{
+.discover-Jobs a {
   color: #0c0093d6;
   position: absolute;
   top: 50px;
   right: -80px;
 }
 
-.discover-Jobs a:hover{
+.discover-Jobs a:hover {
   color: #002884;
 }
 
@@ -822,4 +872,3 @@ ul {
 
 
 /*===============================================End services section ================================*/
-
